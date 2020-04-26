@@ -1,0 +1,114 @@
+<html> 
+    <head> 
+  <title> Анкета абонента Інтернет  </title>
+  <h2><center>Анкета абонента Інтернет </center></h2>
+<form name="form" action="" method="post">
+<body bgcolor="PapayaWhip">
+<fieldset>
+ <p><b>1.ПІБ</b></p>
+<p>
+    <label>Ім'я</label>
+    <input type="text" required="required"name="login">
+  </p>
+  <p>
+    <label>Прізвище</label>
+    <input type="password" required="required" name="password">
+  </p>
+<p>
+    <label>По-батькові</label>
+    <input type="text" required="required"name="login">
+  </p>
+<p><b>2.Стать</b></p>
+<p>
+ <label>Стать:</label>
+ <label>
+  <input type="radio" name="status">
+  Чоловік
+ </label>
+ <label>
+  <input type="radio" name="status">
+  Жінка
+ </label>
+</p>
+<p><b>3.Місто</b></p>
+  <p>
+    <label>Вкажіть місто</label>
+    <select name="country">
+      <option>Київ</option>
+      <option>Харків</option>
+      <option>Львів</option>
+      <option>Одеса</option>
+    </select>
+  </p>
+<p><b>3.Контакні дані</b></p>
+<p>
+  <label for="email">Email адрес</label>
+  <input type="email" id="email" pattern="emal" name="email" autocomplete="off" placeholder="your@email.address" required maxlength="50" />
+</p>
+<p>
+    <label>Номер телефону</label>
+    <input type="text" name="number" placeholder="+380">
+  </p>
+<progress id="Номер телефону" max="100" value="70"> 70% </progress>
+ </fieldset>
+
+ <fieldset>
+<p><b>1.Що найбільше сподобалось у пропозиції інтернету?</b></p>
+<p><input  name="att" type="checkbox" value="1">Тарифний план<br>
+Акція<input type="text" name="att_1" value="" size="20"><br />
+Інше <input type="text" name="att_2" value="" size="20"><br /></p>
+ 
+<p><b>2.Абонент телебачення?</b></p>
+<input  name="sub" type="radio" value="1">Так<br>
+<input name="sub" type="radio" value="2">Ні<br>
+ 
+<p><b>3. Звідки дізнались про наші послуги:</b></p>
+<input type="checkbox" name="service" value="4" >Дзвінок представника <br />
+<input type="checkbox" name="service" value="6" >Реклама в метро <br />
+<input type="checkbox" name="service" value="7" >Реклама на радіо<br />
+<input type="checkbox" name="service" value="8" >Реклама на ТВ <br />
+<input type="checkbox" name="service" value="9" >Шукали нового провайдера в Інтернеті<br />
+<input type="checkbox" name="service" value="13" >Рекомендації знайомих<br />
+Інше <input type="text" name="service_1" value="" size="20"><br />
+<p><b>4. Оцініть якість надання послуг:</b></p>
+<p>
+<input type="range" list="tickmarks">
+
+<datalist id="tickmarks">
+  <option value="0"  label="0%">
+  <option value="10" label="10%">
+  <option value="20" label="20%">
+  <option value="30" label="30%">
+  <option value="40" label="40%">
+  <option value="50" label="50%">
+  <option value="60" label="60%">
+  <option value="70" label="70%">
+  <option value="80" label="80%">
+  <option value="90" label="90%">
+  <option value="100"label="100%">
+</datalist>
+ </p>
+<p><b>4. Що найбільше не подобається у наших послугах?:</b></p>
+<p>
+<label><for="message">:</label>
+<textarea id="meggage" name="" id="" cols="50" rows="7" spellcheck="false"
+input type="text" placeholder="Мені не подобається..."></textarea>
+</p>
+ <p><b>5. Яким браузером користуєтесь?:</b></p>
+<input type="text" name="browser" list="browsers" />
+<datalist id="browsers">
+  <option value="Chrome" />
+  <option value="Firefox" />
+  <option value="Internet Explorer" />
+  <option value="Safari" />
+  <option value="Opera" />
+</datalist>
+</fieldset>
+<p>
+    <button>
+     Відправити
+    </button>
+  </p>
+</body>
+</form>
+</html>
